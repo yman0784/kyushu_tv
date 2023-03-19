@@ -61,3 +61,7 @@ gem 'jcanvas-rails', '~> 0.1.0'
 gem 'devise'
 
 gem 'rename'
+
+group :production do
+  gem 'pg'
+end
