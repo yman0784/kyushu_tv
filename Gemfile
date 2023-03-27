@@ -69,3 +69,5 @@ end
 gem 'whenever', require: false
 
 gem 'mechanize'
+
+gem 'active_hash'

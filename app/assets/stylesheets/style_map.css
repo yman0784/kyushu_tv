@@ -39,9 +39,9 @@ img {
 	font-size: 14px;
  	display: flex;
 		display: -webkit-flex;
- 	align-items: center; /* 縦方向中央揃え */
+ 	align-items:flex-start; 
  		-webkit-align-items: center; /* 縦方向中央揃え（Safari用） */
- 	justify-content: center; /* 横方向中央揃え */
+ 	justify-content: flex-start; /* 横方向中央揃え */
  		-webkit-justify-content: center; /* 横方向中央揃え（Safari用） */
 	border-radius: 6px;
 		-webkit-border-radius: 6px;
@@ -61,8 +61,8 @@ img {
 	width: 777px;
 	height: 482px;
 	background-color: none;
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: 100px;
+	margin-right: 100px;
 	position: relative;
 }
 #japan-map p.area-title {
@@ -71,58 +71,63 @@ img {
 
 /* 九州・沖縄 */
 
+p {
+	font-size:xx-large
+}
+
 #kyusyu {
-	width: 152px;
-	height: 247px;
+	width: 700px;
+	height: 600px;
 	position: absolute;
 	left: 0px;
-	top: 235px;
+	top: 0px;
 }
 #kyusyu div.area div {
-	background-color: #ff7575;
-	color: #ffffff;
+	background-color: #92cc40;
+	color: #000000;
+
 }
 #fukuoka {
-	width: 50px;
-	height: 50px;
-	left: 101px;
+	width: 250px;
+	height: 250px;
+	left: 341px;
 	top: 0px;
 }
 #saga {
-	width: 50px;
-	height: 50px;
-	left: 51px;
-	top: 0px;
+	width: 150px;
+	height: 250px;
+	left: 171px;
+	top: 50px;
 }
 #nagasaki {
-	width: 50px;
-	height: 50px;
+	width: 150px;
+	height: 250px;
 	left: 1px;
-	top: 0px;
-}
-#oita {
-	width: 50px;
-	height: 50px;
-	left: 101px;
-	top: 50px;
-}
-#kumamoto {
-	width: 50px;
-	height: 100px;
-	left: 51px;
-	top: 50px;
-}
-#miyazaki {
-	width: 50px;
-	height: 50px;
-	left: 101px;
 	top: 100px;
 }
+#oita {
+	width: 250px;
+	height: 250px;
+	left: 611px;
+	top: 100px;
+}
+#kumamoto {
+	width: 250px;
+	height: 400px;
+	left: 341px;
+	top: 271px;
+}
+#miyazaki {
+	width: 200px;
+	height: 350px;
+	left: 611px;
+	top: 371px;
+}
 #kagoshima {
-	width: 68px;
-	height: 49px;
-	left: 83px;
-	top: 150px;
+	width: 300px;
+	height: 200px;
+	left: 290px;
+	top: 690px;
 }
 
 /****************************************

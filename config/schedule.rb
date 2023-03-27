@@ -29,4 +29,8 @@ every 1.day, :at => '8:00 pm' do
   rake "tv_program:tv_program_create"
 end
 
+every 1.hours do
+  rake "tv_program:tv_program_create"
+end
+
 # Learn more: http://github.com/javan/whenever
