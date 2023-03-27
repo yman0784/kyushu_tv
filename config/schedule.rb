@@ -25,4 +25,8 @@ job_type :rake, "source /Users/user/.zshrc; export PATH=\"$HOME/.rbenv/bin:$PATH
 #   runner "AnotherModel.prune_old_records"
 # end
 
+every 1.day, :at => '7:00 pm' do
+  rake "tv_program:tv_program_create"
+end
+
 # Learn more: http://github.com/javan/whenever
