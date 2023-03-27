@@ -4,4 +4,8 @@ class TvProgramsController < ApplicationController
 
   end
   
+  def search
+    @tv_programs = TvProgram.search(params[:keyword])
+    
+  end
 end
