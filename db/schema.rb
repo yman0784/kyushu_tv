@@ -14,10 +14,11 @@ ActiveRecord::Schema.define(version: 2023_03_18_162121) do
 
   create_table "tv_programs", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "title"
-    t.string "overview"
+    t.text "overview"
     t.text "detail"
-    t.string "performer"
+    t.text "performer"
     t.string "time"
+    t.integer "prefecture_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
